@@ -5,22 +5,22 @@
 }
 
 :root {
- --text-color: white;
- --bg-url: url(./assets/bg-desktop.jpg);
- --stroke-color: rgba(255, 255, 255, 0.5);
- --surface-color: rgba(255, 255, 255, 0.1);
- --surface-solor-hover: rgba(0, 0, 0, 0.02);
- --highlight-color:rgba(255, 255, 255, 0.20);
- --switch-bg-url: url(./assets/moon-stars.svg);
+  --text-color: white;
+  --bg-url: url(./assets/bg-desktop.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-solor-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 .light {
   --text-color: black;
   --bg-url: url(./assets/bg-desktop-light.jpg);
-  --stroke-color: rgba( 0, 0, 0, 0.5);
-  --surface-color: rgba( 0, 0, 0, 0.05);
-  --surface-color-hover:  rgba(255, 255, 255, 0.05);
-  --highlight-color: rgba(0, 0, 0, 0.10);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
 }
 
@@ -31,21 +31,21 @@ body {
 }
 
 body * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto;
   padding: 0 24px;
 }
 
 /* profile */
-#profile{
+#profile {
   text-align: center;
   padding: 24px;
-
 }
 
 #profile img {
@@ -60,7 +60,7 @@ body * {
 }
 
 #profile p a {
- text-decoration: none;
+  text-decoration: none;
 }
 
 /* switch */
@@ -70,7 +70,7 @@ body * {
   margin: 4px auto;
 }
 
-#switch button{
+#switch button {
   width: 32px;
   height: 32px;
   border: 0;
@@ -83,13 +83,12 @@ body * {
   transform: translateY(-50%);
 }
 
-.light #switch button{
+.light #switch button {
   right: 0;
   left: initial;
-
 }
 
-#switch span{
+#switch span {
   display: block;
   width: 64px;
   height: 24px;
@@ -98,7 +97,6 @@ body * {
   background: var(--surface-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  
 }
 /* links */
 
@@ -117,34 +115,33 @@ ul li a {
   padding: 16px 24px;
   border-radius: 8px;
 
-  border: 1px solid  var(--stroke-color);
+  border: 1px solid var(--stroke-color);
   background: var(--surface-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  
+
   text-decoration: none;
 
-  transition: background .25s;
+  transition: background 0.25s;
 }
 
 /* pseudo - selector / botão interativo */
 
-ul li a:hover{
+ul li a:hover {
   border: 1.5px solid var(--text-color);
   background: var(--surface-color-hover);
-
 }
 
 /* social links */
 
 #social-links {
-  display:flex;
+  display: flex;
   padding: 24px 0;
   justify-content: center;
   font-size: 24px;
 }
 
-#social-links a{
+#social-links a {
   display: flex;
   justify-content: center;
   align-items: center;
